@@ -1,6 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.h2.Driver
+    
     username: sa
     password: '{cipher}AQBJgPbi4EPJ0RjK4GNTVvYf50GxA+h4aageIKPE3WwvVbqNKAT47Ij+DBuZyeSCob6c17Vk7AmFGjFeZDugQC1xS8m1kh1dq1c0+sRQq3Q1RwXLOCJIm0OVe6VgkwDYcAbiCFx4jJ9TBRdbmc28hU8x+GhNbon8gsWlGCqc7Smu7HSid+u6sqNV6USvxwmaG6gdYjd6tnmLM6f/dL1DctVpk+vp/SIq1qmjP1wCAnCMNO/anvR5Ihj93WcvQLj6BfI1oc+/d0BCHLW7s1NkBp6tDl0e8i3l8wLDXaX1BbmOs2IZrSftxND+Z5MsItDd30Sb/55SRBs8c/OaQ7ThALFz+3/nWjm2IFm3e4WlZy2epLsinNNFvWJeCbqnYmUuiZ4='
 token:
@@ -11,3 +12,5 @@ gateway:
 
 order_service:
   url: http://order-service/order-service/%s/orders
+  exception:
+    orders_is_empty: User's orders is empty.
